@@ -1,0 +1,11 @@
+local args = {[1] = 1}
+local clickCount = 9999999999999999999999999999999999999999
+
+while true do
+   for burst = 1, clickCount do
+      for click = 1, burst do
+         game:GetService("ReplicatedStorage").Events.Cookie:FireServer()
+      end
+      wait()
+   end
+end
